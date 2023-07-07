@@ -2,6 +2,9 @@
 import functions
 import time
 
+# testing program
+
+
 now = time.strftime("%B %d, %Y %H:%M:%S")
 print("It is", now)
 
