@@ -6,7 +6,7 @@ import time
 
 
 now = time.strftime("%B %d, %Y %H:%M:%S")
-print("The time is below:")
+print("The time is below now")
 print("It is", now)
 
 while True:
