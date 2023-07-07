@@ -2,7 +2,7 @@
 import functions
 import time
 
-# testing program 123
+# testing program by Kevin
 
 
 now = time.strftime("%B %d, %Y %H:%M:%S")
