@@ -6,7 +6,10 @@ import time
 
 
 now = time.strftime("%B %d, %Y %H:%M:%S")
+<<<<<<< HEAD:main.py
 print("The time is below now")
+=======
+>>>>>>> origin/master:cli.py
 print("It is", now)
 
 while True:
