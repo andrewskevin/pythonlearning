@@ -30,11 +30,12 @@ while True:
     window["clock"].update(time.strftime("%B %d, %Y %H:%M:%S"))
     match event:
         case "Add":
-            todos = functions.read_todos()
-            new_todo = values["todo"] + "\n"
-            todos.append(new_todo)
-            functions.write_todos(todos)
-            window["todos"].update(todos)
+                todos = functions.read_todos()
+                new_todo = values["todo"] + "\n"
+
+                todos.append(new_todo)
+                functions.write_todos(todos)
+                window["todos"].update(todos)
         case "Edit":
             try:
                 todo_edit = values["todos"][0]
@@ -61,7 +62,10 @@ while True:
         case "Exit":
             break
         case "todos":
-            window["todo"].update(values["todos"][0])
+            try:
+                window["todo"].update(values["todos"][0])
+            except IndexError:
+                sg.popup("Please add an item first.", font=("Helvetica", 20))
         case sg.WIN_CLOSED:
             exit()
 
