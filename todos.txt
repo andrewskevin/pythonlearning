@@ -1,7 +1,4 @@
-Buy Grocery
 Create Project
 Clean the bag.
-go to school
-start the car 
-Go to the store 
 Learn Python
+Building a web app
